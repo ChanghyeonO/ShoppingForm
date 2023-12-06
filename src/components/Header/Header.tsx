@@ -1,27 +1,56 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   Container,
   LogoArea,
   LogoImage,
-  LoginArea,
+  AuthArea,
+  LoginButton,
   LoginText,
-  RegisterArea,
+  RegisterButton,
   RegisterText,
 } from "./HeaderStyle";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Container>
+    <Container
+      style={{
+        backgroundColor: isScrolled ? "#fff" : "#1a6dff",
+      }}
+    >
       <LogoArea>
         <LogoImage />
       </LogoArea>
-      <LoginArea>
-        <LoginText>로그인</LoginText>
-      </LoginArea>
-      <RegisterArea>
-        <RegisterText>회원가입</RegisterText>
-      </RegisterArea>
+      <AuthArea>
+        <LoginButton>
+          <LoginText style={{ color: isScrolled ? "#000" : "#fff" }}>
+            로그인
+          </LoginText>
+        </LoginButton>
+        <RegisterButton>
+          <RegisterText style={{ color: isScrolled ? "#000" : "#fff" }}>
+            회원가입
+          </RegisterText>
+        </RegisterButton>
+      </AuthArea>
     </Container>
   );
 };
