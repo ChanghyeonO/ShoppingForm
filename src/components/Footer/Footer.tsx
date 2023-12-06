@@ -26,9 +26,15 @@ const Footer = () => {
           <WhoMade>만든이 : 오창현</WhoMade>
         </WhoMadeArea>
         <ContactArea>
-          <EmailLogo />
-          <InstaLogo />
-          <GithubLogo />
+          <a href="mailto:ckdgus5189@gmail.com" target="_blank">
+            <EmailLogo />
+          </a>
+          <a href="https://www.instagram.com/5_changhyeon/" target="_blank">
+            <InstaLogo />
+          </a>
+          <a href="https://github.com/ChanghyeonO" target="_blank">
+            <GithubLogo />
+          </a>
         </ContactArea>
       </IntroArea>
     </Container>

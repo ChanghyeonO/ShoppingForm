@@ -6,8 +6,11 @@ export const Container = styled.div`
 `;
 
 const IntroAreaDesign = styled.div`
-  position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100vw;
   height: 500px;
 `;
 
@@ -19,7 +22,6 @@ export const IntroArea2 = styled(IntroAreaDesign)``;
 export const IntroArea3 = styled(IntroAreaDesign)``;
 
 const IntroImageDesign = styled.img`
-  position: absolute;
   z-index: 1;
   object-fit: cover;
   width: 300px;
@@ -29,26 +31,17 @@ const IntroImageDesign = styled.img`
 `;
 
 export const IntroImage1 = styled(IntroImageDesign)`
-  top: 20%;
-  right: 30%;
   height: 500px;
   border-radius: 30px;
   background-color: #fff;
 `;
 
-export const IntroImage2 = styled(IntroImageDesign)`
-  top: 20%;
-  left: 30%;
-`;
+export const IntroImage2 = styled(IntroImageDesign)``;
 
-export const IntroImage3 = styled(IntroImageDesign)`
-  top: 20%;
-  right: 30%;
-`;
+export const IntroImage3 = styled(IntroImageDesign)``;
 
 const TextDesign = styled.div`
-  position: absolute;
-  z-index: 1;
+  z-index: 2;
   font-size: 30px;
   line-height: 40px;
   font-weight: bold;
@@ -57,6 +50,7 @@ const TextDesign = styled.div`
 export const IntroText1 = styled(TextDesign)`
   top: 35%;
   left: 25%;
+  color: #fff;
 `;
 
 export const IntroText2 = styled(TextDesign)`

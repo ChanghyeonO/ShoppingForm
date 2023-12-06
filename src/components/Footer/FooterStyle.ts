@@ -71,6 +71,7 @@ const LogoDesign = styled.div`
   height: 30px;
   border-radius: 8px;
   background-size: cover;
+  cursor: pointer;
 `;
 
 export const EmailLogo = styled(LogoDesign)`

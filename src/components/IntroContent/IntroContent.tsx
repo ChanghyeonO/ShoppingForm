@@ -17,13 +17,13 @@ const IntroContent = () => {
   return (
     <Container>
       <IntroArea1>
-        <IntroImage1 />
         <IntroText1>
           간단하게 만드는 쇼핑몰 페이지!
           <br /> 이제 더이상 비싸게, 어렵게 만들지 마세요!
           <br />
           10분이면 간단한 쇼핑몰 페이지 완성!
         </IntroText1>
+        <IntroImage1 />
       </IntroArea1>
       <IntroArea2>
         <IntroImage2 />
@@ -35,13 +35,13 @@ const IntroContent = () => {
         </IntroText2>
       </IntroArea2>
       <IntroArea3>
-        <IntroImage3 />
         <IntroText3>
           간단하게 만드는 쇼핑몰 페이지!
           <br /> 이제 더이상 비싸게, 어렵게 만들지 마세요!
           <br />
           10분이면 간단한 쇼핑몰 페이지 완성!
         </IntroText3>
+        <IntroImage3 />
       </IntroArea3>
     </Container>
   );

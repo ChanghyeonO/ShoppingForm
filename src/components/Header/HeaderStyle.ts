@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import MainLogo from "../../assets/icons/shopping-online.png";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   position: sticky;
@@ -35,21 +36,21 @@ export const AuthArea = styled.div`
   gap: 30px;
 `;
 
-const AuthButton = styled.button`
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-`;
-
 const FontStyle = styled.p`
   font-weight: bold;
   font-size: 20px;
 `;
 
-export const LoginButton = styled(AuthButton)``;
+export const LoginButton = styled(Link)`
+  text-decoration: none;
+`;
 
 export const LoginText = styled(FontStyle)``;
 
-export const RegisterButton = styled(AuthButton)``;
+export const RegisterButton = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+`;
 
 export const RegisterText = styled(FontStyle)``;

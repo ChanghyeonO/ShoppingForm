@@ -40,7 +40,7 @@ const Header = () => {
         <LogoImage />
       </LogoArea>
       <AuthArea>
-        <LoginButton>
+        <LoginButton to="/login">
           <LoginText style={{ color: isScrolled ? "#000" : "#fff" }}>
             로그인
           </LoginText>
