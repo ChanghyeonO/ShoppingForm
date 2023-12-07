@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import MainLogo from "../../assets/icons/shopping-online.png";
-import InstagramImage from "../../assets/icons/instagram.png";
-import emailImage from "../../assets/icons/gmail.png";
-import GithubImage from "../../assets/icons/github.png";
+import InstagramImage from "../../../assets/icons/instagram.png";
+import emailImage from "../../../assets/icons/gmail.png";
+import GithubImage from "../../../assets/icons/github.png";
 
 export const Container = styled.div`
   display: flex;
@@ -23,11 +22,11 @@ export const LogoArea = styled.div`
 `;
 
 export const LogoImage = styled.div`
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background-image: url(${MainLogo});
   background-size: cover;
+  background-color: #888;
 `;
 
 export const Logo = styled.div`
@@ -39,13 +38,14 @@ export const IntroArea = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: 218px;
   height: 100%;
 `;
 
 export const WhoMadeArea = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
   width: 100%;
   height: 50%;
@@ -53,6 +53,11 @@ export const WhoMadeArea = styled.div`
 `;
 
 export const WhoMade = styled.div`
+  font-weight: bold;
+  font-size: 20px;
+`;
+
+export const TelNumber = styled.div`
   font-weight: bold;
   font-size: 20px;
 `;
