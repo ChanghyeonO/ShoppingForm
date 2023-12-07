@@ -45,7 +45,7 @@ const Header = () => {
             로그인
           </LoginText>
         </LoginButton>
-        <RegisterButton>
+        <RegisterButton to={"/service-terms"}>
           <RegisterText style={{ color: isScrolled ? "#000" : "#fff" }}>
             회원가입
           </RegisterText>

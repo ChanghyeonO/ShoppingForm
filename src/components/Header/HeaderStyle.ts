@@ -47,10 +47,8 @@ export const LoginButton = styled(Link)`
 
 export const LoginText = styled(FontStyle)``;
 
-export const RegisterButton = styled.button`
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+export const RegisterButton = styled(Link)`
+  text-decoration: none;
 `;
 
 export const RegisterText = styled(FontStyle)``;

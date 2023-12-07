@@ -45,7 +45,7 @@ const LoginContent = () => {
       </LoginButtonArea>
 
       <RegisterButtonArea>
-        <RegisterButton>회원가입</RegisterButton>
+        <RegisterButton to={"/service-terms"}>회원가입</RegisterButton>
       </RegisterButtonArea>
 
       <FindAccountArea>
