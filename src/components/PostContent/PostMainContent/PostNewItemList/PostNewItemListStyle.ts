@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import AddButtonSqure from "../../../../assets/icons/free-icon-add-button-squre1.png";
 
 export const NewListingArea = styled.div`
   display: flex;
@@ -16,7 +17,7 @@ export const NewListingArea = styled.div`
 export const NewItem = styled.div`
   width: calc(33.33% - 160px);
   height: 200px;
-  background-color: #333;
+  background-color: #eee;
   border-radius: 12px;
   cursor: pointer;
 `;

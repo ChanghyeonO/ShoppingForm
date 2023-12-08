@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import AddButtonSqure from "../../../../assets/icons/icon-add-button-squre.png";
 
 interface SliderImageProps {
   $activeIndex: number;
 }
 
 export const Container = styled.div`
-  width: 100vw;
+  max-width: 100vw;
   height: 700px;
   display: flex;
   overflow: hidden;
@@ -22,4 +23,8 @@ export const SliderImage = styled.div<SliderImageProps>`
   background-color: #f0f0f0;
   transition: transform 0.5s ease-in-out;
   transform: ${({ $activeIndex }) => `translateX(-${$activeIndex * 100}%)`};
+  background-image: url(${AddButtonSqure});
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 `;

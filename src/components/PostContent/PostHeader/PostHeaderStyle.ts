@@ -1,13 +1,13 @@
 import styled from "styled-components";
+import AddButtonCircle from "../../../assets/icons/icon-add-button-squre.png";
 
 export const Container = styled.div`
   display: flex;
-  max-width: 100%;
+  max-width: 100vw;
   height: 80px;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  background-color: #bbb;
 `;
 
 export const LogoArea = styled.div`
@@ -16,19 +16,20 @@ export const LogoArea = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
+  border: none;
 `;
 
-export const Logo = styled.img`
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+export const Logo = styled.div`
+  width: 80%;
+  height: 100%;
   background-size: cover;
-  background-color: #888;
+  background-image: url(${AddButtonCircle});
   cursor: pointer;
 `;
 
 export const MenuArea = styled.div`
   display: flex;
+  align-items: center;
   width: 70%;
   height: 100%;
   gap: 50px;
@@ -36,14 +37,20 @@ export const MenuArea = styled.div`
 
 export const Menu = styled.div`
   display: flex;
-  width: 100%;
+  width: 10%;
   height: 100%;
   align-items: center;
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  border: 1px solid #fff;
+  color: #555;
   cursor: pointer;
+  transition: background-color 0.5s, font-size 0.5s;
+  &:hover {
+    background-color: #eee;
+    font-size: 30px;
+    color: #000;
+  }
 `;
 
 export const UserProfileArea = styled.div`

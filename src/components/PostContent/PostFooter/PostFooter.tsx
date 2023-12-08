@@ -20,12 +20,12 @@ const PostFooter = () => {
     <Container>
       <LogoArea>
         <LogoImage />
-        <Logo>ShoppingForm</Logo>
+        <Logo>쇼핑몰 이름을 추가하세요</Logo>
       </LogoArea>
       <IntroArea>
         <WhoMadeArea>
-          <WhoMade>대표 : 오창현</WhoMade>
-          <TelNumber>연락처 : 010-4402-6623</TelNumber>
+          <WhoMade>대표 : 추가하기</WhoMade>
+          <TelNumber>연락처 : 추가하기</TelNumber>
         </WhoMadeArea>
         <ContactArea>
           <a

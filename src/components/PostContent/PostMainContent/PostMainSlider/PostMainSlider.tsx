@@ -8,7 +8,9 @@ const PostMainSlider = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex(prevIndex => (prevIndex + 1) % sliderItemCount);
+      if (sliderItemCount > 1) {
+        setActiveIndex(prevIndex => (prevIndex + 1) % sliderItemCount);
+      }
     }, 5000);
 
     return () => clearInterval(interval);
