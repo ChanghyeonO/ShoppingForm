@@ -8,9 +8,6 @@ const PostProduct = () => {
       <ProductArea>
         <ProductText />
       </ProductArea>
-      <ProductArea>
-        <ProductText />
-      </ProductArea>
     </Container>
   );
 };

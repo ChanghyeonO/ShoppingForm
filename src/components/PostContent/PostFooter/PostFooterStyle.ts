@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AddButtonCircle from "../../../assets/icons/icon-add-button-squre.png";
+import AddButtonSqure from "../../../assets/icons/icon-add-button-squre.png";
 import InstagramImage from "../../../assets/icons/instagram.png";
 import emailImage from "../../../assets/icons/gmail.png";
 import GithubImage from "../../../assets/icons/github.png";
@@ -27,7 +27,7 @@ export const LogoImage = styled.div`
   height: 70px;
   border-radius: 50%;
   background-size: cover;
-  background-image: url(${AddButtonCircle});
+  background-image: url(${AddButtonSqure});
   cursor: pointer;
 `;
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import AddButtonSqure from "../../../../assets/icons/free-icon-add-button-squre1.png";
 
 export const NewListingArea = styled.div`
   display: flex;

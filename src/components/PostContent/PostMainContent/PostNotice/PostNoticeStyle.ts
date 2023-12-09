@@ -34,4 +34,5 @@ export const NoticeText = styled.textarea`
   font-size: 20px;
   font-weight: bold;
   overflow: auto;
+  background-color: #f0f0f0;
 `;

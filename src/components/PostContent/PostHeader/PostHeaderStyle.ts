@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import AddButtonCircle from "../../../assets/icons/icon-add-button-squre.png";
+import AddButtonSqure from "../../../assets/icons/icon-add-button-squre.png";
 
 export const Container = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const Logo = styled.div`
   width: 80%;
   height: 100%;
   background-size: cover;
-  background-image: url(${AddButtonCircle});
+  background-image: url(${AddButtonSqure});
   cursor: pointer;
 `;
 

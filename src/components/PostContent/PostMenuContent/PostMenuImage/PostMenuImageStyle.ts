@@ -3,17 +3,15 @@ import AddButtonSqure from "../../../../assets/icons/icon-add-button-squre.png";
 
 export const Container = styled.div`
   max-width: 100vw;
-  min-height: 700px;
+  height: 500px;
+  cursor: pointer;
   background-color: #f0f0f0;
 `;
 
-export const ProductArea = styled.div`
-  height: 700px;
-  background-image: url(${AddButtonSqure});
+export const Image = styled.div`
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
-
-  cursor: pointer;
+  background-image: url(${AddButtonSqure});
 `;
-
-export const ProductText = styled.div``;

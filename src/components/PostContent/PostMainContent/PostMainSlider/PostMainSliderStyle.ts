@@ -10,6 +10,8 @@ export const Container = styled.div`
   height: 700px;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
+  background-color: #f0f0f0;
 `;
 
 export const SliderImage = styled.div<SliderImageProps>`
@@ -20,11 +22,9 @@ export const SliderImage = styled.div<SliderImageProps>`
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  background-color: #f0f0f0;
   transition: transform 0.5s ease-in-out;
   transform: ${({ $activeIndex }) => `translateX(-${$activeIndex * 100}%)`};
   background-image: url(${AddButtonSqure});
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
 `;
