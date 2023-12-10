@@ -7,6 +7,7 @@ import Register from "./pages/Register/Register";
 import SuccessRegister from "./pages/Register/SuccessRegister";
 import PostMain from "./pages/PostMain/PostMain";
 import PostMenu from "./pages/PostMenu/PostMenu";
+import PostMenuDetail from "./pages/PostMenuDetail/PostMenuDetail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/register-success" element={<SuccessRegister />} />
         <Route path="/post/main" element={<PostMain />} />
         <Route path="/post/menu" element={<PostMenu />} />
+        <Route path="/post/menu/detail" element={<PostMenuDetail />} />
       </Routes>
     </>
   );
