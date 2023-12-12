@@ -87,8 +87,10 @@ export const MinusButton = styled.button`
 `;
 
 export const CountInput = styled.input`
+  text-align: center;
   width: 100px;
   height: 35px;
+  font-size: 20px;
   border: none;
   background-color: #eee;
   border-radius: 8px;

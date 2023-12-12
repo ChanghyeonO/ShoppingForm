@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Container,
@@ -20,6 +20,18 @@ import {
 } from "./ItemPurchaseContentStyle";
 
 const ItemPurchaseContent = () => {
+  const [count, setCount] = useState<number>(1);
+
+  const MinusCount = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+
+  const PlusCount = () => {
+    setCount(count + 1);
+  };
+
   return (
     <Container>
       <ImageArea>
@@ -44,9 +56,9 @@ const ItemPurchaseContent = () => {
           <ItemOptionButton>옵션6</ItemOptionButton>
         </ItemOptionArea>
         <ItemCountArea>
-          <MinusButton>-</MinusButton>
-          <CountInput></CountInput>
-          <PlusButton>+</PlusButton>
+          <MinusButton onClick={MinusCount}>-</MinusButton>
+          <CountInput value={count} readOnly />
+          <PlusButton onClick={PlusCount}>+</PlusButton>
         </ItemCountArea>
         <PurchaseArea>
           <ShoppingBasketButton>장바구니</ShoppingBasketButton>

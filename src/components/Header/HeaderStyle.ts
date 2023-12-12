@@ -23,7 +23,7 @@ export const LogoArea = styled.div`
   align-items: center;
 `;
 
-export const LogoImage = styled.div`
+export const LogoImage = styled(Link)`
   width: 60px;
   height: 60px;
   border-radius: 50%;

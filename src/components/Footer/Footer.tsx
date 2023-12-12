@@ -26,13 +26,25 @@ const Footer = () => {
           <WhoMade>만든이 : 오창현</WhoMade>
         </WhoMadeArea>
         <ContactArea>
-          <a href="mailto:ckdgus5189@gmail.com" target="_blank">
+          <a
+            href="mailto:ckdgus5189@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <EmailLogo />
           </a>
-          <a href="https://www.instagram.com/5_changhyeon/" target="_blank">
+          <a
+            href="https://www.instagram.com/5_changhyeon/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <InstaLogo />
           </a>
-          <a href="https://github.com/ChanghyeonO" target="_blank">
+          <a
+            href="https://github.com/ChanghyeonO"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <GithubLogo />
           </a>
         </ContactArea>

@@ -37,7 +37,7 @@ const Header = () => {
       }}
     >
       <LogoArea>
-        <LogoImage />
+        <LogoImage to={"/"} />
       </LogoArea>
       <AuthArea>
         <LoginButton to="/login">
